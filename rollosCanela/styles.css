@@ -10,8 +10,11 @@
     --color-fondo-princpal:#FDF5E6;
     --color-texto-principal: #6E4228;
     --color-detalle-verde: #87A96B;
+    --color-btn-naranja:#d59b8d;
     --fuente-titulos: 'Monserrat';
-    --fuente-parrafos: 'Open Sans'
+    --fuente-parrafos: 'Open Sans';
+    --sombra-botones-oscura: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    --sombra-botones-clara: rgba(255, 255, 255, 0.35) 0px 5px 15px;
 }
 
 header{
@@ -77,11 +80,13 @@ nav ul{
     flex-direction:column;
     padding: 30px;
     font-family: var(--fuente-titulos);
-    font-size: 50px;
+    font-size: 4.5rem;
+    text-transform: uppercase;
  }
 
  .hero-botones{
     text-align: center;
+    height: 45px;
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -89,16 +94,19 @@ nav ul{
  }
 .hero-botones a{
     text-decoration: none;
-    background-color: var(--color-detalle-verde);
+    background-color: var(--color-btn-naranja);
     color:#FDF5E6;
     padding: 10px 20px;
-    border-radius: 30px;
+    border-radius: 15px;
+    box-shadow: var(--sombra-botones-clara);
 }
 
 .hero p{
-    font-size: 30px;
+    font-size: 2rem;
     font-family: var(--fuente-parrafos);
     margin-bottom: 50px;
+    text-align: center;
+    text-transform: capitalize;
 }
 
 .capa-oscura{
