@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Ejercicios practicos html + css +js</h1>
+
+        <div class="ejercicio">
+            <h2>Ejercicio 1 Calcular IMC</h2>
+            <p>Calcular IMC usando variables y operadores. Formula IMC = PESO / (ALTURA) <sup>2</sup></p>
+
+            <div class="input-group">
+                <label for="pesoImc">Peso en (Kg)</label>
+                <input type="number" name="pesoImc" id="pesoImc" placeholder="0.00" min="5" max="200">
+            </div>
+
+            <div class="input-group">
+                <label for="alturaImc">Altura en (metros)</label>
+                <input type="number" name="alturaImc" id="alturaImc" placeholder="0.0" min="1.00" >
+            </div>
+
+            <button>Calcular IMC</button>
+
+            <div id="resultadoImc" class="resultado">
+                <h3>Tu IMC es: </h3>
+                <p id="valorImc"></p>
+                <p id="categoriaImc"></p>
+            </div>
+        </div> 
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
